@@ -1,0 +1,16 @@
+# Local run: the adapter against the LIVE hosted TMS, with FMCSA/SMS stubbed
+# (USE_STUBS=true) so no FMCSA/Twilio accounts are needed. Provide TMS_TOKEN in your
+# shell (it is a secret and is never committed):  TMS_TOKEN=... docker compose up
+services:
+  adapter:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      TMS_HOST: ${TMS_HOST:-tramway.proxy.rlwy.net}
+      TMS_PORT: ${TMS_PORT:-17159}
+      TMS_TOKEN: ${TMS_TOKEN:?set TMS_TOKEN in your shell}
+      USE_STUBS: "true"
+      ADAPTER_API_KEY: ${ADAPTER_API_KEY:-}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      PORT: "8000"

@@ -1,0 +1,2 @@
+LOAD_ID:LD00271     |ORIG_CITY:Huntsville                    |ORIG_STATE:AL|ORIG_ZIP:35801|DEST_CITY:Austin                        |DEST_STATE:TX|DEST_ZIP:78701|PICKUP_DT:20260625172000|DELIVERY_DT:20260626142000|EQTYPE:DRY_VAN   |RATE:1704    |WEIGHT:24138   |COMMODITY:Beverages                     |PIECES:3     |MILES:719   |DIMS:44ft x 8ft x 9ft              |NOTES:Live unload. 2H detention free, then $75/h.                                                                             |STATUS:OPEN    |MAX_BUY:1999    
+END

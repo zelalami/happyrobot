@@ -1,0 +1,2 @@
+LOAD_ID:LD00269     |ORIG_CITY:Huntsville                    |ORIG_STATE:AL|ORIG_ZIP:35801|DEST_CITY:Minneapolis                   |DEST_STATE:MN|DEST_ZIP:55402|PICKUP_DT:20260626124800|DELIVERY_DT:20260629074800|EQTYPE:REEFER    |RATE:1968    |WEIGHT:42500   |COMMODITY:Lumber                        |PIECES:15    |MILES:791   |DIMS:46ft x 8ft x 9ft              |NOTES:                                                                                                                        |STATUS:OPEN    |MAX_BUY:2355    
+END

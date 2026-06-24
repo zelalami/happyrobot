@@ -1,0 +1,2 @@
+LOAD_ID:LD00285     |ORIG_CITY:Little Rock                   |ORIG_STATE:AR|ORIG_ZIP:72201|DEST_CITY:Tacoma                        |DEST_STATE:WA|DEST_ZIP:98402|PICKUP_DT:20260623071200|DELIVERY_DT:20260624051200|EQTYPE:DRY_VAN   |RATE:4247    |WEIGHT:15776   |COMMODITY:Frozen Goods                  |PIECES:1     |MILES:1778  |DIMS:48ft x 8ft x 9ft              |NOTES:No paperwork at pickup. Call dispatch on arrival.                                                                       |STATUS:OPEN    |MAX_BUY:4736    
+END

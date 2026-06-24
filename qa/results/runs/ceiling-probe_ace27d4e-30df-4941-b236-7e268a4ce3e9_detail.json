@@ -1,0 +1,11 @@
+{
+  "id": "ace27d4e-30df-4941-b236-7e268a4ce3e9",
+  "org_id": "019ed554-2c4e-7711-9452-04037234971e",
+  "workflow_id": "019eeef8-89a0-735f-ac3e-cca383726d56",
+  "version_id": "019eeef8-89ac-70ac-b906-d1f8101e9f8a",
+  "status": "completed",
+  "annotation": null,
+  "timestamp": "2026-06-23T00:00:11.410Z",
+  "completed_at": "2026-06-23T00:02:29.165Z",
+  "execution_environment": "development"
+}

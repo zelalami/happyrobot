@@ -1,0 +1,22 @@
+- action  Web call
+   - action  Inbound Voice Agent
+      - prompt  Carrier Sales Prompt
+         - tool    get_load
+            - action  get_load · POST /loads/get   [{{use_case_variables.ADAPTER_BASE_URL}}/loads/get]
+         - tool    verify_otp
+            - action  verify_otp · POST /otp/verify   [{{use_case_variables.ADAPTER_BASE_URL}}/otp/verify]
+         - tool    book_load
+            - action  book_load · POST /bookings   [{{use_case_variables.ADAPTER_BASE_URL}}/bookings]
+         - tool    search_loads
+            - action  search_loads · POST /loads/search   [{{use_case_variables.ADAPTER_BASE_URL}}/loads/search]
+         - tool    evaluate_offer
+            - action  evaluate_offer · POST /offers/evaluate   [{{use_case_variables.ADAPTER_BASE_URL}}/offers/evaluate]
+         - tool    mock_handoff
+            - action  mock_handoff · Transfer Popup
+         - tool    send_otp
+            - action  send_otp · POST /otp/send   [{{use_case_variables.ADAPTER_BASE_URL}}/otp/send]
+         - tool    verify_authority
+            - action  verify_authority · POST /carriers/find   [{{use_case_variables.ADAPTER_BASE_URL}}/carriers/find]
+         - tool    log_offer
+            - action  log_offer webhook   [{{use_case_variables.ADAPTER_BASE_URL}}/offers/log]
+      - action  extract_outcome

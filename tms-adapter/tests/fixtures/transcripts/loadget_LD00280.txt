@@ -1,0 +1,2 @@
+LOAD_ID:LD00280     |ORIG_CITY:Little Rock                   |ORIG_STATE:AR|ORIG_ZIP:72201|DEST_CITY:Nashville                     |DEST_STATE:TN|DEST_ZIP:37203|PICKUP_DT:20260622070900|DELIVERY_DT:20260624110900|EQTYPE:FLATBED   |RATE:714     |WEIGHT:21757   |COMMODITY:Machinery                     |PIECES:23    |MILES:325   |DIMS:49ft x 8ft x 9ft              |NOTES:                                                                                                                        |STATUS:OPEN    |MAX_BUY:757     
+END

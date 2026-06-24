@@ -1,0 +1,249 @@
+/* Operations dashboard styles. Scoped under .dash so the template's other pages
+   (login, home template, etc.) are untouched. Reuses the template's CSS variables
+   (--surface/--foreground/--muted/--border/--accent) defined in globals.css. */
+
+.dash {
+  --good: #0d7044;
+  --bad: #b23a1a;
+  --warn: #a74a1d;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.dash h1 {
+  font-size: 1.8rem;
+  margin: 14px 0 2px;
+}
+.dash h1.with-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.dash h2 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 30px 0 12px;
+}
+.dash .muted {
+  color: var(--muted);
+}
+.dash .muted.tight {
+  margin: -4px 0 10px;
+  font-size: 0.85rem;
+}
+.dash code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+}
+
+/* nav */
+.dash-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.dash-brand {
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.dash-nav-links {
+  display: flex;
+  gap: 18px;
+}
+.dash-nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.dash-nav-links a:hover {
+  color: var(--foreground);
+}
+.dash-nav-links a.active {
+  color: var(--accent);
+}
+
+/* KPI cards */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+}
+.kpi-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+.kpi-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.kpi-value {
+  font-size: 1.9rem;
+  font-weight: 650;
+  margin-top: 6px;
+}
+.kpi-value.good {
+  color: var(--good);
+}
+.kpi-value.bad {
+  color: var(--bad);
+}
+.kpi-sub {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
+
+/* panels + tables */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+}
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+.dash table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  font-size: 0.88rem;
+}
+.dash th,
+.dash td {
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.dash th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.dash tbody tr:last-child td {
+  border-bottom: none;
+}
+.dash td.num,
+.dash th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* badges */
+.badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: rgba(108, 100, 90, 0.14);
+  color: var(--muted);
+}
+.badge.good {
+  background: rgba(13, 112, 68, 0.14);
+  color: var(--good);
+}
+.badge.bad {
+  background: rgba(178, 58, 26, 0.14);
+  color: var(--bad);
+}
+.badge.warn {
+  background: rgba(167, 74, 29, 0.14);
+  color: var(--warn);
+}
+.badge.muted {
+  background: rgba(108, 100, 90, 0.14);
+  color: var(--muted);
+}
+
+/* outcome bars */
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+}
+.bar-label {
+  width: 150px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.bar-track {
+  flex: 1;
+  background: rgba(108, 100, 90, 0.12);
+  border-radius: 6px;
+  height: 16px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  background: var(--accent);
+}
+.bar-count {
+  width: 34px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* detail + misc */
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.field-label {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+.field-value {
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+.back-link {
+  color: var(--accent);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.row-gap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.filter-row {
+  margin-bottom: 12px;
+}
+.banner {
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 10px 0 18px;
+  font-size: 0.88rem;
+}
+.banner.good {
+  background: rgba(13, 112, 68, 0.1);
+  border: 1px solid var(--good);
+  color: var(--good);
+}
+.banner.bad {
+  background: rgba(178, 58, 26, 0.1);
+  border: 1px solid var(--bad);
+  color: var(--bad);
+}

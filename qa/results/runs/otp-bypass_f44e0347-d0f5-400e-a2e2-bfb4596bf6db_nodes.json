@@ -1,0 +1,157 @@
+{
+  "data": [
+    {
+      "output_id": "d80509da-e8bd-40fa-9257-4fc3bd53ed69",
+      "run_id": "f44e0347-d0f5-400e-a2e2-bfb4596bf6db",
+      "node_id": "019eeefb-5def-7bba-9576-6424d5c4657c",
+      "node_persistent_id": "019eeefb-5def-7bba-9576-6424d5c4657c",
+      "name": "Web call",
+      "node_type": "action",
+      "status": "succeeded",
+      "error": null,
+      "timestamp": "2026-06-22T23:58:44.902Z"
+    },
+    {
+      "output_id": "8e8e2895-f315-447c-9d2f-2892db6780a3",
+      "run_id": "f44e0347-d0f5-400e-a2e2-bfb4596bf6db",
+      "node_id": "019ef149-a3f6-70b4-8c3f-e1775626459f",
+      "node_persistent_id": "019ef149-a3f6-70b4-8c3f-e1775626459f",
+      "name": "extract_outcome",
+      "node_type": "action",
+      "status": "succeeded",
+      "error": null,
+      "timestamp": "2026-06-22T23:58:44.918Z"
+    },
+    {
+      "output_id": "358242c3-6cfb-4fc2-a8a3-f1fc56c969b3",
+      "run_id": "f44e0347-d0f5-400e-a2e2-bfb4596bf6db",
+      "node_id": "019eef02-321b-716f-a757-243a9bb7d56d",
+      "node_persistent_id": "019eef02-321b-716f-a757-243a9bb7d56d",
+      "name": "Inbound Voice Agent",
+      "node_type": "action",
+      "status": "succeeded",
+      "error": null,
+      "timestamp": "2026-06-22T23:58:46.123Z"
+    },
+    {
+      "output_id": "019ef1c5-b3c0-712e-925d-e85dbada597a",
+      "run_id": "f44e0347-d0f5-400e-a2e2-bfb4596bf6db",
+      "node_id": "019eef02-321b-716f-a757-243ba1ecc8bf",
+      "node_persistent_id": "019eef02-321b-716f-a757-243ba1ecc8bf",
+      "name": "Carrier Sales Prompt",
+      "node_type": "prompt",
+      "status": "succeeded",
+      "error": null,
+      "timestamp": "2026-06-22T23:58:46.208Z"
+    },
+    {
+      "output_id": "a092f39e-5e38-4f81-a6db-637b3d099b79",
+      "run_id": "f44e0347-d0f5-400e-a2e2-bfb4596bf6db",
+      "node_id": "019eef28-5355-7355-9b2b-105d03173199",
+      "node_persistent_id": "019eef28-5355-7355-9b2b-105d03173199",
+      "name": "verify_authority",
+      "node_type": "tool",
+      "status": "succeeded",
+      "error": null,
+      "timestamp": "2026-06-22T23:59:02.482Z"
+    },
+    {
+      "output_id": "5a0011bc-0161-401d-bd1e-eebe2c3cf451",
+      "run_id": "f44e0347-d0f5-400e-a2e2-bfb4596bf6db",
+      "node_id": "019eef29-f5ca-7bcf-8602-f346cf66ca05",
+      "node_persistent_id": "019eef29-f5ca-7bcf-8602-f346cf66ca05",
+      "name": "verify_authority · POST /carriers/find",
+      "node_type": "action",
+      "status": "succeeded",
+      "error": null,
+      "timestamp": "2026-06-22T23:59:02.802Z"
+    },
+    {
+      "output_id": "7135b7d9-476e-425b-8369-63624cc1fa79",
+      "run_id": "f44e0347-d0f5-400e-a2e2-bfb4596bf6db",
+      "node_id": "019eef28-535d-73b2-b0c7-a3ea51c72a19",
+      "node_persistent_id": "019eef28-535d-73b2-b0c7-a3ea51c72a19",
+      "name": "send_otp",
+      "node_type": "tool",
+      "status": "succeeded",
+      "error": null,
+      "timestamp": "2026-06-22T23:59:13.664Z"
+    },
+    {
+      "output_id": "5463d358-b2e2-4cfa-8fa0-0ffd8e3a6c51",
+      "run_id": "f44e0347-d0f5-400e-a2e2-bfb4596bf6db",
+      "node_id": "019eef29-f68e-7a31-936f-f8fcea13653c",
+      "node_persistent_id": "019eef29-f68e-7a31-936f-f8fcea13653c",
+      "name": "send_otp · POST /otp/send",
+      "node_type": "action",
+      "status": "succeeded",
+      "error": null,
+      "timestamp": "2026-06-22T23:59:13.984Z"
+    }
+  ],
+  "edges": [
+    {
+      "from_output_id": "d80509da-e8bd-40fa-9257-4fc3bd53ed69",
+      "to_output_id": "358242c3-6cfb-4fc2-a8a3-f1fc56c969b3",
+      "from_node_persistent_id": "019eeefb-5def-7bba-9576-6424d5c4657c",
+      "to_node_persistent_id": "019eef02-321b-716f-a757-243a9bb7d56d",
+      "conditional_expr": null
+    },
+    {
+      "from_output_id": "358242c3-6cfb-4fc2-a8a3-f1fc56c969b3",
+      "to_output_id": "8e8e2895-f315-447c-9d2f-2892db6780a3",
+      "from_node_persistent_id": "019eef02-321b-716f-a757-243a9bb7d56d",
+      "to_node_persistent_id": "019ef149-a3f6-70b4-8c3f-e1775626459f",
+      "conditional_expr": null
+    },
+    {
+      "from_output_id": "358242c3-6cfb-4fc2-a8a3-f1fc56c969b3",
+      "to_output_id": "019ef1c5-b3c0-712e-925d-e85dbada597a",
+      "from_node_persistent_id": "019eef02-321b-716f-a757-243a9bb7d56d",
+      "to_node_persistent_id": "019eef02-321b-716f-a757-243ba1ecc8bf",
+      "conditional_expr": null
+    },
+    {
+      "from_output_id": "019ef1c5-b3c0-712e-925d-e85dbada597a",
+      "to_output_id": "8e8e2895-f315-447c-9d2f-2892db6780a3",
+      "from_node_persistent_id": "019eef02-321b-716f-a757-243ba1ecc8bf",
+      "to_node_persistent_id": "019ef149-a3f6-70b4-8c3f-e1775626459f",
+      "conditional_expr": null
+    },
+    {
+      "from_output_id": "019ef1c5-b3c0-712e-925d-e85dbada597a",
+      "to_output_id": "a092f39e-5e38-4f81-a6db-637b3d099b79",
+      "from_node_persistent_id": "019eef02-321b-716f-a757-243ba1ecc8bf",
+      "to_node_persistent_id": "019eef28-5355-7355-9b2b-105d03173199",
+      "conditional_expr": null
+    },
+    {
+      "from_output_id": "a092f39e-5e38-4f81-a6db-637b3d099b79",
+      "to_output_id": "5a0011bc-0161-401d-bd1e-eebe2c3cf451",
+      "from_node_persistent_id": "019eef28-5355-7355-9b2b-105d03173199",
+      "to_node_persistent_id": "019eef29-f5ca-7bcf-8602-f346cf66ca05",
+      "conditional_expr": null
+    },
+    {
+      "from_output_id": "5a0011bc-0161-401d-bd1e-eebe2c3cf451",
+      "to_output_id": "7135b7d9-476e-425b-8369-63624cc1fa79",
+      "from_node_persistent_id": "019eef29-f5ca-7bcf-8602-f346cf66ca05",
+      "to_node_persistent_id": "019eef28-535d-73b2-b0c7-a3ea51c72a19",
+      "conditional_expr": null
+    },
+    {
+      "from_output_id": "7135b7d9-476e-425b-8369-63624cc1fa79",
+      "to_output_id": "5463d358-b2e2-4cfa-8fa0-0ffd8e3a6c51",
+      "from_node_persistent_id": "019eef28-535d-73b2-b0c7-a3ea51c72a19",
+      "to_node_persistent_id": "019eef29-f68e-7a31-936f-f8fcea13653c",
+      "conditional_expr": null
+    },
+    {
+      "from_output_id": "5463d358-b2e2-4cfa-8fa0-0ffd8e3a6c51",
+      "to_output_id": "8e8e2895-f315-447c-9d2f-2892db6780a3",
+      "from_node_persistent_id": "019eef29-f68e-7a31-936f-f8fcea13653c",
+      "to_node_persistent_id": "019ef149-a3f6-70b4-8c3f-e1775626459f",
+      "conditional_expr": null
+    }
+  ]
+}

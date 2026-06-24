@@ -1,0 +1,22 @@
+{
+  "id": "019eeef8-89a0-735f-ac3e-cca383726d56",
+  "org_id": "019ed554-2c4e-7711-9452-04037234971e",
+  "name": "inbound-carrier-sales",
+  "slug": "9kegbd8rdw10",
+  "icon": "layer-group",
+  "folder_id": null,
+  "data_retention_days": null,
+  "timestamp": "2026-06-22T10:55:26.112Z",
+  "latest_version": {
+    "id": "019eeef8-89ac-70ac-b906-d1f8101e9f8a",
+    "name": "Version 1",
+    "slug": "s3d4nkrmppo4",
+    "version_number": 1,
+    "is_published": true,
+    "is_live": true,
+    "environment": "development",
+    "published_at": null,
+    "timestamp": "2026-06-22T10:55:26.123Z"
+  },
+  "live_version": null
+}

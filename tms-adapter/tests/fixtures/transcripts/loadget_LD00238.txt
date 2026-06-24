@@ -1,0 +1,2 @@
+LOAD_ID:LD00238     |ORIG_CITY:San Jose                      |ORIG_STATE:CA|ORIG_ZIP:95113|DEST_CITY:Allentown                     |DEST_STATE:PA|DEST_ZIP:18101|PICKUP_DT:20260620203200|DELIVERY_DT:20260623043200|EQTYPE:STEP_DECK |RATE:4360    |WEIGHT:19824   |COMMODITY:Machinery                     |PIECES:3     |MILES:2474  |DIMS:49ft x 8ft x 9ft              |NOTES:                                                                                                                        |STATUS:OPEN    |MAX_BUY:5298    
+END
